@@ -18,19 +18,26 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
 		<glacio.version>0.0.1-SNAPSHOT</glacio.version>
+        <automocker.vesion>1.2.0</automocker.vesion>
 
         <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
+        <spring-petclinic-rest.version>master-SNAPSHOT</spring-petclinic-rest.version>
+        <spring-boot-for-petclinic.version>1.5.2.RELEASE</spring-boot-for-petclinic.version>
 
         <junit.version>5.3.2</junit.version>
         <assertj.version>3.11.1</assertj.version>
         <mockito.version>2.23.4</mockito.version>
         <hjson.version>3.0.0</hjson.version>
+        <h2.version>1.4.197</h2.version>
 
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
+        <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
+        <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     </properties>
 
     <modules>
         <module>junit-spring</module>
+        <module>junit-spring-automocker</module>
     </modules>
 
     <scm>
@@ -73,8 +80,16 @@
 
     <repositories>
         <repository>
+            <id>central</id>
+            <url>http://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
             <id>Sonatype OSS snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 </project>
