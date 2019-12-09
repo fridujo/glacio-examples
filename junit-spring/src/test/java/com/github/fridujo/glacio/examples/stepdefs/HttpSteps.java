@@ -31,14 +31,14 @@ public class HttpSteps {
     @When("HTTP (.*) on '(.*)'")
     public void http_exchange(String verb, String uri) throws Exception {
         mockMvc.perform(request(HttpMethod.resolve(verb), uri)
-            .contentType(MediaType.APPLICATION_JSON_UTF8))
+            .contentType(MediaType.APPLICATION_JSON))
             .andDo(lastMvcResult::set);
     }
 
     @When("HTTP (.*) on '(.*)' with content")
     public void http_exchange_with_body(String verb, String uri, DocString body) throws Exception {
         mockMvc.perform(request(HttpMethod.resolve(verb), uri)
-            .contentType(MediaType.APPLICATION_JSON_UTF8)
+            .contentType(MediaType.APPLICATION_JSON)
             .content(toJson(body.getContent()))).andDo(lastMvcResult::set);
     }
 

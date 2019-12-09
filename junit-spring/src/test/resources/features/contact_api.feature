@@ -21,7 +21,7 @@ Feature: Contact storage
            """
            last HTTP response status is 201
        When searching for this contact by pattern
-           HTTP GET on '/api/contact/jo*'
+           HTTP GET on '/api/contact/jo.+'
        Then one contact is found
            last HTTP response status is 200
            last HTTP response body matches json-path '$.length()' with value '1'
