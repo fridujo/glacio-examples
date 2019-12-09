@@ -47,7 +47,7 @@ class InMemoryContactRepository implements ContactRepository {
 
     @Override
     public Collection<ContactInfo> findByName(String nameRegex) {
-        Pattern namePattern = Pattern.compile(nameRegex);
+        Pattern namePattern = Pattern.compile(nameRegex, Pattern.CASE_INSENSITIVE);
         return contactsById
             .values()
             .stream()
