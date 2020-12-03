@@ -17,7 +17,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-		<glacio.version>0.0.1-SNAPSHOT</glacio.version>
+		<glacio.version>0.0.1</glacio.version>
 
         <spring-boot.version>2.4.0</spring-boot.version>
 
