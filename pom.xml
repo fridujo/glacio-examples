@@ -21,7 +21,7 @@
 
         <spring-boot.version>2.4.5</spring-boot.version>
 
-        <junit.version>5.7.1</junit.version>
+        <junit.version>5.8.2</junit.version>
         <assertj.version>3.11.1</assertj.version>
         <mockito.version>2.23.4</mockito.version>
         <hjson.version>3.0.0</hjson.version>
