@@ -19,7 +19,7 @@
 
 		<glacio.version>0.0.1</glacio.version>
 
-        <spring-boot.version>2.4.5</spring-boot.version>
+        <spring-boot.version>2.7.2</spring-boot.version>
 
         <junit.version>5.7.1</junit.version>
         <assertj.version>3.11.1</assertj.version>
